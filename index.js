@@ -10,7 +10,7 @@ require('dotenv').config();
 const app = express();
 // const port = 5000;
 // or
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // middleware
 app.use(cors());
@@ -100,7 +100,7 @@ app.get('/hello', (req, res) => {
 })
 
 
-app.listen(PORT, () => {
+app.listen(port, () => {
   console.log('Running Genius Server on port', port);
 })
 
